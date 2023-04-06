@@ -6,13 +6,94 @@
     android:layout_height="match_parent"
     tools:context=".PracticalTest01Var06MainActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
+        android:orientation="horizontal"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent">
+
+        <EditText
+            android:id="@+id/firstET"
+            android:layout_width="50dp"
+            android:layout_height="48dp"
+            android:layout_weight="0.3"
+            android:enabled="false"
+            android:saveEnabled="false"
+            android:text="0" />
+
+        <EditText
+            android:id="@+id/secondET"
+            android:layout_width="50dp"
+            android:layout_height="48dp"
+            android:layout_weight="0.3"
+            android:enabled="false"
+            android:text="0" />
+
+        <EditText
+            android:id="@+id/thirdET"
+            android:layout_width="50dp"
+            android:layout_height="48dp"
+            android:layout_weight="0.3"
+            android:enabled="false"
+            android:text="0" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="270dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout"
+        app:layout_constraintVertical_bias="0.501">
+
+        <CheckBox
+            android:id="@+id/firstCB"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.3"
+            android:text="hold"
+            tools:layout_editor_absoluteX="18dp"
+            tools:layout_editor_absoluteY="409dp" />
+
+        <CheckBox
+            android:id="@+id/secondCB"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.3"
+            android:text="hold"
+            tools:layout_editor_absoluteX="157dp"
+            tools:layout_editor_absoluteY="414dp" />
+
+        <CheckBox
+            android:id="@+id/thirdCB"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.3"
+            android:text="hold"
+            tools:layout_editor_absoluteX="301dp"
+            tools:layout_editor_absoluteY="414dp" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/playBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Play"
+        android:layout_marginBottom="160dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout2"
+        app:layout_constraintVertical_bias="0.497" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
